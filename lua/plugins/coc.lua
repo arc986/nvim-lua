@@ -6,7 +6,7 @@ return {
     config = function()
         local map = vim.api.nvim_set_keymap
         local options = { noremap = true, silent = true }
-    
+
         -- Atajos de teclado para coc.nvim
         map('n', '<leader>gd', '<Plug>(coc-definition)', options)
         map('n', '<leader>gr', '<Plug>(coc-references)', options)
@@ -17,14 +17,5 @@ return {
         map('n', '<leader>d', '<Plug>(coc-diagnostic)', options)
         map('n', '<leader>ds', '<Plug>(coc-diagnostic)', options)
         map('n', '<leader>ff', '<Plug>(coc-format)', options)
-
-        
-      end,
-  }
-
-
-
-
-
-
-  
+    end,
+}
